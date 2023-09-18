@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"  type="text/css" href="css/style.css">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+.header1 {
+  padding: 20px;
+  text-align: center;
+  background:navy ;
+  color: white;
+}
+
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+h2{
+    text-align:center;
+    font-size: 28px;
+    color:rgb(40, 40, 97);
+
+
+}
+h3{
+    text-align:left;
+    font-size:24px;
+    margin:20px;
+    color:rgb(40, 40, 97);
+
+}
+</style>
+</head>
+<body>
+
+<div class="header1">
+    <h1>ABOUT US</h1>
+</div>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="IMAGES/14061_lbsitw.jpg" style="width:100%">
+
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="IMAGES/events.jpeg" style="width:100%">
+
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="IMAGES/lbt_front_view-m2.jpg" style="width:100%">
+
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); 
+}
+</script>
+
+<h2 class="h2">
+    INTRODUCTION
+</h2>
+<p style="font-size:18px;margin: 20px; align-content: center;">
+    LBS Institute of Technology for Women, Poojappura, Thiruvananthapuram, started functioning in 2001, is the first Women Engi- neering College in the state, managed by LBS Centre for Science and Technology (LBSCST), Thiruvananthapuram. LBSCST, the premier institution of computer training/consultancy, was established by the Government of Kerala in 1976. The Centre is administered by a governing body and an executive committee. The Honorable Chief Minister is the Chairman of the governing body and the honorable minister for Education is the Vice-Chairman.
+
+    </P>
+    <p style="font-size:18px;margin: 20px; align-content: center;">LBSITW is the only engineering college for women in the Government sector in the state of Kerala. The Institute offers B.Tech programs in Electronics and Communication, Electronics & Computer Engineering, Applied Electronics & Instrumentation, Com- puter Science and Engineering, Information Technology & Civil Engineering and M.Tech programs in Signal Processing and Computer Science & Engineering.
+    
+    Thank You for Making us Proud</p>
+<br>
+<br>
+<h3 class="h3">
+  CORE VALUES
+</h3>
+<p style="font-size:18px; margin:20px; align-content: center;">
+    Excellence - We strive to excel and grow as we work together to support the institute for teaching, research, and service.
+    <br><br>
+    Integrity-We believe professional excellence requires personal and organiza- tional integrity and a collective commitment to ethical behavior.
+    <br><br>
+    Respect- Our relationships are based on mutual respect and personal trustwor-
+    
+    thiness and are strengthened by open communication.
+    <br><br>
+    Teamwork-We value teamwork and collaboration, which contribute to our efforts to achieve personal and shared goals.
+    <br><br>
+    Environmental Awareness-we are committed to promote environmental aware- ness, global thinking and local action in all that we do.
+    </p>
+    <div class="row5">
+
+      <div class="footer">
+        <div class="inner-footer">
+      
+      
+          <div class="footer-items">
+            <h1>LBSITW</h1>
+            <p>Lal Bahadur Shastri Institute of Technology for Women, Thiruvananthapuram, is the first engineering college for women in the state of Kerala on the Malabar Coast of southwestern India.</p>
+          </div>
+      
+      <!--  for quick links  -->
+          <div class="footer-items">
+            <h4>Quick Links</h4>
+            <div class="border1"></div> 
+              <ol>
+                <a href="https://lbt.ac.in/"><li>LBSITW-official website</li></a><br>
+                <a href="https://ktu.edu.in/home.htm;jsessionid=BE79D569AE0077BE4AFA04425D528FF6"><li>Kerala Technical University</li></a><br>
+                <a href="https://www.kerala.gov.in/"><li>Government of kerala</li></a><br>
+            
+              </ol>
+          </div>
+
+           
+          <div class="footer-items">
+            <h4>  MORE LINK</h4>
+            <div class="border1"></div> 
+              <ol>
+                <a href="https://lbt.ac.in/"><li>AICTE</li></a><br>
+                <a href="https://ktu.edu.in/home.htm;jsessionid=BE79D569AE0077BE4AFA04425D528FF6"><li>IEEE SB LBSITW</li></a><br>
+                <a href="https://www.kerala.gov.in/"><li>DTE KERALA</li></a><br>
+            
+              </ol>
+          </div>
+      
+
+          <div class="footer-items">
+            <h4>CONTACT US</h4>
+            <div class="border1"></div> 
+              <ol>
+                <i class="fa fa-fw fa-envelope"></i> <a href="mailto:hod.it.com">
+                 <li>hod.it.lbsitw.ac.com</li> </a> <br>
+                  <i class="fa fa-fw fa-phone"></i> <li>+91 657893900847</li>
+                   
+            
+              </ol>
+          </div>
+
+         
+      
+      
+   
+        <div class="footer-bottom">
+     All right reserved @ -Made by <a href="dp.html"style="color:white;" >NANDANA</a>
+        </div>
+      </div>
+        
+    
+    </body>
+    </html>
+

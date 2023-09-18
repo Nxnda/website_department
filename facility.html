@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"  type="text/css" href="css/style.css">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+.header1 {
+  padding: 20px;
+  text-align: center;
+  background:navy ;
+  color: white;
+}
+
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+h2{
+    text-align:center;
+    font-size: 28px;
+    color:rgb(40, 40, 97);
+
+
+}
+h3{
+    text-align:left;
+    font-size:24px;
+    margin:20px;
+    color:rgb(40, 40, 97);
+
+}
+h4{
+    text-align:left;
+    font-size:24px;
+
+    margin:20px;
+    color:rgb(40, 40, 97);
+
+}
+</style>
+</head>
+<body>
+
+<div class="header1">
+    <h1>Facilities</h1>
+</div>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="IMAGES/cse_programming_lab.jpg" style="width:100%">
+
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="IMAGES/facility.jpeg" style="width:100%">
+
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="IMAGES/lab facility.jpeg" style="width:100%">
+
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); 
+}
+</script>
+
+<h2 class="h2">
+DEPARTMENT FACILITY
+</h2>
+<p style="font-size:16px;margin: 20px; align-content: center;">
+    Department Facilities
+    The Department of Information Technology has a video conferencing facility, a central server room and Seven laboratories. The department has the necessary software and hardware infrastructure for the conduct of all the 10 laboratory/practical subjects in the B.Tech and M.Tech curriculum. All the student projects are done in-house. Each laboratory room has networked printers over Ethernet LAN. Although the emphasis is on the use of Linux and open source software, other popular proprietary software platforms are also supported. In addition,the department provides the necessary technical support for the smooth functioning of the campus-wide network in the college. A 100Mbps internet connection via firewall provided to the entire campus through fibre optic links. Also have 10 Mbps NMEICT connection and 10 Mbps Leased line connections.
+    <br>
+    The IT department is managing the entire campus network including Administrative office, Library, and other departments and sections in the campus. More over the computer laboratories are under the IT department are also functioning as the option facilitation centre during the time of the Centralized Allotment process (CAP) of the Commissioner for Entrance Examinations. In additions to these, Biometric Punching, WIFI management, Website management, DDFS, Conducting Online Exams/Training programmes for CGPU,Govt.(ASAP/NASSCOM) and other organizations (Online banking recruitments) etc. are handled by the IT Department..</p>
+<br>
+<br>
+<h3 class="h3">
+    DEPARTMENT LIBRARY
+</h3>
+<p style="font-size:15px;margin: 20px; align-content: center;">
+    A robust and dynamic library is vital to the academic life of the students as well as the Faculty. The library provides an environment for discovery, reflection, and expansion of knowledge. The department library serves as a central organ of academic activity in the IT Department. The Department has a rich & vast collection of more than 300 books, periodicals and reports. It also has one copy each of all B.Tech. Projects and M.Tech.Thesis work carried out in the department in recent years. The library serves to provide a calm and cosy ambience conductive to long hours of study. The library opens on all working days of the Institute from 9 AM to 4:00 PM.
+
+<h4 class="h4">DEPARTMENT LABORATORY</h4>
+<h5 style="font-size:15px;margin: 20px; align-content: center;">Internet Laboratory</h5>
+<p style="font-size:15px;margin: 20px; align-content: center;">
+This lab runs on thin-client machines running under EnterpriseLinux as wellas desktops running under Windows. 36terminals areprovided forInternetconnectivityand running various software labsinthecurriculum.
+</p>
+<h5 style="font-size:15px;margin: 20px; align-content: center;">Network Laboratory</h5>
+<p style="font-size:15px;margin: 20px; align-content: center;">This lab has 8 Cisco routers,switches,high- speed modems and 36 dual-boot desktop machines. A wireless LAN laboratory with wireless access points/routers,wireless site survey kit and other equipmentset up here.
+</p>
+<h5 style="font-size:15px;margin: 20px; align-content: center;">Software Testing Laboratory</h5>
+<p style="font-size:15px;margin: 20px; align-content: center;">
+This lab has 15 desktops with Windows 8 Professional, Intel Core i5 Processors with internet connectivity. The Functional Testing software (QTP) hasbeenset uphere.
+</p>
+<div class="row5">
+
+  <div class="footer">
+    <div class="inner-footer">
+  
+  
+      <div class="footer-items">
+        <h1>LBSITW</h1>
+        <p>Lal Bahadur Shastri Institute of Technology for Women, Thiruvananthapuram, is the first engineering college for women in the state of Kerala on the Malabar Coast of southwestern India.</p>
+      </div>
+  
+
+      <div class="footer-items">
+        <h5>Quick Links</h5>
+        <div class="border1"></div> 
+          <ol>
+            <a href="https://lbt.ac.in/"><li>LBSITW-official website</li></a><br>
+            <a href="https://ktu.edu.in/home.htm;jsessionid=BE79D569AE0077BE4AFA04425D528FF6"><li>Kerala Technical University</li></a><br>
+            <a href="https://www.kerala.gov.in/"><li>Government of kerala</li></a><br>
+        
+          </ol>
+      </div>
+
+       
+      <div class="footer-items">
+        <h5>  MORE LINK</h5>
+        <div class="border1"></div> 
+          <ol>
+            <a href="https://lbt.ac.in/"><li>AICTE</li></a><br>
+            <a href="https://ktu.edu.in/home.htm;jsessionid=BE79D569AE0077BE4AFA04425D528FF6"><li>IEEE SB LBSITW</li></a><br>
+            <a href="https://www.kerala.gov.in/"><li>DTE KERALA</li></a><br>
+        
+          </ol>
+      </div>
+  
+
+      <div class="footer-items">
+        <h5>CONTACT US</h5>
+        <div class="border1"></div> 
+          <ol>
+            <i class="fa fa-fw fa-envelope"></i> <a href="mailto:hod.it.com">
+             <li>hod.it.lbsitw.ac.com</li> </a> <br>
+              <i class="fa fa-fw fa-phone"></i> <li>+91 657893900847</li>
+               
+        
+          </ol>
+      </div>
+
+     
+  
+  
+
+    <div class="footer-bottom">
+ All right reserved @ -Made by <a href="dp.html"style="color:white;" >NANDANA</a>
+    </div>
+  </div>
+    
+
+</body>
+</html>
